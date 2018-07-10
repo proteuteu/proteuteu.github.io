@@ -11,34 +11,39 @@
     
     <style>
            
-           body {background-color: black;}
+           body {background-color: purple;}
            
            h1   {color: pink;
            	     text-align: center}
 
            p    {color: green}	     
            
-           img  {width:  80%;
-                 height: 80%;}
-                 
-           #menu ul 
-           {background: blue;
+           #COVER {width:100%; 
+                   height: 158px} 
+
+           #WELCOME {width:100%; 
+                     height:500px}       
+           
+           ul 
+           {position:absolute;
+           	top:63px; 
+           	background: blue;
             width: 250px;
             padding: 0;
             text-align: left;}  
            
-           #menu li 
+           li 
            {width: auto;
             height: 40px;
             line-height: 40px} 
            
-           #menu li a 
+           li a 
            {text-decoration: underline;
             color: white;
             font-weight: bold;
             display: block}
            
-           #menu li:hover 
+           li:hover
            {background: red;} 
            
            #myBtn                       
@@ -68,7 +73,7 @@
 <h1> WELCOME </h1>
 
 
-<div id="menu">
+<div>
  <ul>
  <li><a href="trang chủ.html">Trang chủ</a></li>
  <li><a href="tin tức.html">Tin tức</a></li>
@@ -77,6 +82,7 @@
  </ul>
 </div>
 
+<img id="COVER" alt="cover" title="cover" src="http://www.coverbash.com/wp-content/covers/caeli_flowers_facebook_cover.jpg">
 
 <p>Đoạn văn này rất dài</p>
 <p>Đoạn văn này rất dài</p>
@@ -100,7 +106,7 @@
 <p>Đoạn văn này rất dài</p>
 
 
-<img src="https://previews.123rf.com/images/chercheryl/chercheryl1508/chercheryl150800015/43136337-cute-pastel-mint-and-yellow-with-laces-welcome-background-banner-template.jpg">
+<img id="WELCOME" alt="welcome" title="welcome" src="https://previews.123rf.com/images/chercheryl/chercheryl1508/chercheryl150800015/43136337-cute-pastel-mint-and-yellow-with-laces-welcome-background-banner-template.jpg">
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Quay trở lại</button>
@@ -110,9 +116,9 @@
 
 <script>
 
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;}
+ function topFunction()           
+{document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;}
 
 </script>
 
